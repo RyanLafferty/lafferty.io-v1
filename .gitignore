@@ -8,6 +8,7 @@
 
 # production
 /build
+*.min.*
 
 # misc
 .DS_Store
