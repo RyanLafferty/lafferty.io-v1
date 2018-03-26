@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Switch, Route } from 'react-router-dom';
 import { withStyles } from 'material-ui/styles';
 import classNames from 'classnames';
 import Drawer from 'material-ui/Drawer';
@@ -13,6 +14,11 @@ import MenuIcon from 'material-ui-icons/Menu';
 import ChevronLeftIcon from 'material-ui-icons/ChevronLeft';
 import ChevronRightIcon from 'material-ui-icons/ChevronRight';
 import { listItems } from './../data/DrawerData';
+
+import Invalid from './Invalid';
+import ComingSoon from './ComingSoon';
+import Resume from './Resume';
+
 
 const drawerWidth = 240;
 const styles = theme => ({
@@ -133,7 +139,11 @@ class Home extends React.Component {
         <main className={classes.content}>
           <div className={classes.toolbar} />
           <div>
-          <Typography>Screen Content</Typography>
+            <Switch>
+                <Route exact path="/" component={ComingSoon} />
+                <Route path="/resume" component={Resume} />
+                <Route component={Invalid} />
+            </Switch>
           </div>
         </main>
       </div>
