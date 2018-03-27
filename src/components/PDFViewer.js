@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { withStyles } from 'material-ui/styles';
 import { Document, Page, setOptions } from 'react-pdf/dist/entry.noworker';
 
 setOptions({
@@ -7,20 +6,38 @@ setOptions({
   cMapPacked: true,
 });
 
-const styles = theme => ({});
 
-class PDFViewer extends Component {  
+class PDFViewer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { width: 0, height: 0 };
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+
   render() {  
     return (
-      <div>
+      <div >
         <Document
           file="resume-wave-old.pdf"
         >
-          <Page pageNumber={1} />
+          <Page pageNumber={1} width={this.state.width * 0.70} />
         </Document>
       </div>
     );
   }
 }
 
-export default withStyles(styles, { withTheme: true })(PDFViewer);
+export default PDFViewer;
