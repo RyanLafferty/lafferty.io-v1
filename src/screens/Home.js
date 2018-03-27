@@ -18,6 +18,11 @@ import { listItems } from './../data/DrawerData';
 import Invalid from './Invalid';
 import ComingSoon from './ComingSoon';
 import Resume from './Resume';
+import Work from './Work';
+import Projects from './Projects';
+import Blog from './Blog';
+import About from './About';
+import Contact from './Contact';
 
 
 const drawerWidth = 240;
@@ -142,6 +147,11 @@ class Home extends React.Component {
             <Switch>
                 <Route exact path="/" component={ComingSoon} />
                 <Route path="/resume" component={Resume} />
+                <Route path="/work" component={Work} />
+                <Route path="/projects" component={Projects} />
+                <Route path="/blog" component={Blog} />
+                <Route path="/about" component={About} />
+                <Route path="/contact" component={Contact} />
                 <Route component={Invalid} />
             </Switch>
           </div>
