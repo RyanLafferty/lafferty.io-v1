@@ -1,7 +1,8 @@
 const debug = process.env.NODE_ENV = "development";
 const webpack = require('webpack');
 const path = require('path');
-const DashboardPlugin = require('webpack-dashboard/plugin');
+//const DashboardPlugin = require('webpack-dashboard/plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -59,9 +60,15 @@ module.exports = {
   }, 
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new DashboardPlugin({
+    new CopyWebpackPlugin([
+      {
+        from: '../node_modules/pdfjs-dist/cmaps/',
+        to: 'cmaps/'
+      },
+    ]),
+    /*new DashboardPlugin({
       minified: false,
       gzip: false,
-    }),
+    }),*/
   ],
 };
