@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from 'material-ui/styles';
-import { Document, Page, setOptions } from 'react-pdf';
+import { Document, Page, setOptions } from 'react-pdf/dist/entry.noworker';
 
 setOptions({
   cMapUrl: 'cmaps/',
