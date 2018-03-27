@@ -57,7 +57,7 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname + "/public/",
+    path: __dirname + "/dist/",
     filename: "ryan-lafferty.min.js"
   },
   plugins: [
