@@ -61,7 +61,7 @@ module.exports = {
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
     new CopyWebpackPlugin([
-      {from: "components/resume-wave-old.pdf"},
+      {from: "data/resumeGeneric.pdf"},
       {
         from: '../node_modules/pdfjs-dist/cmaps/',
         to: 'cmaps/'

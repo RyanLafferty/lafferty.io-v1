@@ -31,7 +31,7 @@ class PDFViewer extends Component {
     return (
       <div >
         <Document
-          file="resume-wave-old.pdf"
+          file="resumeGeneric.pdf"
         >
           <Page pageNumber={1} width={this.state.width * 0.70} />
         </Document>
