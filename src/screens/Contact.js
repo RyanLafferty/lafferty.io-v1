@@ -21,7 +21,7 @@ class Contact extends React.Component {
     return (
       <div style={this.style.root}>
         <Typography variant="headline">
-          If you are interested in getting a hold of me consider contacting me through one of the methods below:
+          If you are interested in getting a hold of me consider contact through one of the methods below:
         </Typography>
         <br />
         <Typography variant="headline">
