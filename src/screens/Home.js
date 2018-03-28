@@ -145,13 +145,13 @@ class Home extends React.Component {
           <div className={classes.toolbar} />
           <div>
             <Switch>
-                <Route exact path="/lafferty.io/" component={ComingSoon} />
-                <Route path="/lafferty.io/resume" component={Resume} />
-                <Route path="/lafferty.io/work" component={Work} />
-                <Route path="/lafferty.io/projects" component={Projects} />
-                <Route path="/lafferty.io/blog" component={Blog} />
-                <Route path="/lafferty.io/about" component={About} />
-                <Route path="/lafferty.io/contact" component={Contact} />
+                <Route exact path="/" component={ComingSoon} />
+                <Route path="/resume" component={Resume} />
+                <Route path="/work" component={Work} />
+                <Route path="/projects" component={Projects} />
+                <Route path="/blog" component={Blog} />
+                <Route path="/about" component={About} />
+                <Route path="/contact" component={Contact} />
                 <Route component={Invalid} />
             </Switch>
           </div>

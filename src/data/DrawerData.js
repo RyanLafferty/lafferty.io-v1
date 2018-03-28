@@ -13,7 +13,7 @@ import EmailIcon from 'material-ui-icons/Email';
 
 export const listItems = (
   <div>
-    <Link to="/lafferty.io/" style={{ textDecoration: 'none' }}>
+    <Link to="/" style={{ textDecoration: 'none' }}>
       <ListItem button>
         <ListItemIcon>
           <HomeIcon />
@@ -22,7 +22,7 @@ export const listItems = (
       </ListItem>
     </Link>
 
-    <Link to="/lafferty.io/work" style={{ textDecoration: 'none' }}>
+    <Link to="/work" style={{ textDecoration: 'none' }}>
       <ListItem button>
         <ListItemIcon>
             <WorkIcon />
@@ -31,7 +31,7 @@ export const listItems = (
       </ListItem>
     </Link>
 
-    <Link to="/lafferty.io/projects" style={{ textDecoration: 'none' }}>
+    <Link to="/projects" style={{ textDecoration: 'none' }}>
       <ListItem button>
         <ListItemIcon>
           <CodeIcon />
@@ -40,7 +40,7 @@ export const listItems = (
       </ListItem>
     </Link>
 
-    <Link to="/lafferty.io/blog" style={{ textDecoration: 'none' }}>
+    <Link to="/blog" style={{ textDecoration: 'none' }}>
       <ListItem button>
         <ListItemIcon>
           <ChatIcon />
@@ -49,7 +49,7 @@ export const listItems = (
       </ListItem>
     </Link>
 
-    <Link to="/lafferty.io/about" style={{ textDecoration: 'none' }}>
+    <Link to="/about" style={{ textDecoration: 'none' }}>
       <ListItem button>
         <ListItemIcon>
           <AccountCircleIcon />
@@ -58,7 +58,7 @@ export const listItems = (
       </ListItem>
     </Link>
 
-    <Link to="/lafferty.io/resume" style={{ textDecoration: 'none' }}>
+    <Link to="/resume" style={{ textDecoration: 'none' }}>
       <ListItem button>
         <ListItemIcon>
           <InsertDriveFileIcon />
@@ -67,7 +67,7 @@ export const listItems = (
       </ListItem>
     </Link>
 
-    <Link to="/lafferty.io/contact" style={{ textDecoration: 'none' }}>
+    <Link to="/contact" style={{ textDecoration: 'none' }}>
       <ListItem button>
         <ListItemIcon>
           <EmailIcon />

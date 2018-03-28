@@ -27,7 +27,7 @@ class PDFViewer extends Component {
     this.setState({ width: window.innerWidth, height: window.innerHeight });
   }
 
-  render() {  
+  render() {
     return (
       <div >
         <Document
