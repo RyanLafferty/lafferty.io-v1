@@ -65,6 +65,7 @@ const styles = theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
+    minHeight: 1500,
   },
   drawerPaperClose: {
     overflowX: 'hidden',
