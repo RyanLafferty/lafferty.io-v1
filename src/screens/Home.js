@@ -13,6 +13,7 @@ import IconButton from 'material-ui/IconButton';
 import MenuIcon from 'material-ui-icons/Menu';
 import ChevronLeftIcon from 'material-ui-icons/ChevronLeft';
 import ChevronRightIcon from 'material-ui-icons/ChevronRight';
+import Avatar from 'material-ui/Avatar';
 import { listItems } from './../data/DrawerData';
 
 import Invalid from './Invalid';
@@ -23,6 +24,7 @@ import Projects from './Projects';
 import Blog from './Blog';
 import About from './About';
 import Contact from './Contact';
+import headshot from './../res/img/headshot.jpeg';
 
 
 const drawerWidth = 240;
@@ -119,7 +121,10 @@ class Home extends React.Component {
               onClick={this.handleDrawerOpen}
               className={classNames(classes.menuButton, this.state.open && classes.hide)}
             >
-              <MenuIcon />
+              <Avatar 
+              alt="Adelle Charles"
+              src={headshot}
+              />
             </IconButton>
             <Typography variant="title" color="inherit" noWrap>
               Ryan Lafferty
