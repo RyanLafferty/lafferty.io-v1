@@ -23,11 +23,21 @@ class Contact extends React.Component {
   style = {
     root: {
         maxWidth: 1000,
+        textAlign: 'center',
     },
     link: {
         color: '#fff',
         textDecoration: "none",
     },
+    chipContainer: {
+        display: 'flex',
+        flexGrow: 1,
+        flexShrink: 1,
+    },
+  }
+
+  handleEmailClick = () => {
+      //TODO
   }
 
   handleLinkedInClick = () => {
@@ -49,20 +59,25 @@ class Contact extends React.Component {
           </Typography>
         </Paper>
 
-        <Chip
-            avatar={<Avatar> <EmailIcon /> </Avatar>}
-            label="rlafferty@hotmail.com"
-        />
-        <Chip
-            avatar={<Avatar> <FaLinkedinSquare /> </Avatar>}
-            label="LinkedIn"
-            onClick={this.handleLinkedInClick}
-        />
-        <Chip
-            avatar={<Avatar> <GoMarkGithub /> </Avatar>}
-            label="Github"
-            onClick={this.handleGithubClick}
-        />
+        <br />
+
+        <div style={this.style.chipContainer}>
+            <Chip
+                avatar={<Avatar> <EmailIcon /> </Avatar>}
+                label="rlafferty@hotmail.com"
+                onClick={this.handleEmailClick}
+            />
+            <Chip
+                avatar={<Avatar> <FaLinkedinSquare /> </Avatar>}
+                label="LinkedIn"
+                onClick={this.handleLinkedInClick}
+            />
+            <Chip
+                avatar={<Avatar> <GoMarkGithub /> </Avatar>}
+                label="Github"
+                onClick={this.handleGithubClick}
+            />
+        </div>
       </div>
     );
   }
