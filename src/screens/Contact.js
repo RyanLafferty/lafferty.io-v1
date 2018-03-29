@@ -33,7 +33,11 @@ class Contact extends React.Component {
         display: 'flex',
         flexGrow: 1,
         flexShrink: 1,
+        justifyContent: 'center'
     },
+    chip: {
+        margin: 10,
+    }
   }
 
   handleEmailClick = () => {
@@ -66,16 +70,19 @@ class Contact extends React.Component {
                 avatar={<Avatar> <EmailIcon /> </Avatar>}
                 label="rlafferty@hotmail.com"
                 onClick={this.handleEmailClick}
+                style={this.style.chip}
             />
             <Chip
                 avatar={<Avatar> <FaLinkedinSquare /> </Avatar>}
                 label="LinkedIn"
                 onClick={this.handleLinkedInClick}
+                style={this.style.chip}
             />
             <Chip
                 avatar={<Avatar> <GoMarkGithub /> </Avatar>}
                 label="Github"
                 onClick={this.handleGithubClick}
+                style={this.style.chip}
             />
         </div>
       </div>
