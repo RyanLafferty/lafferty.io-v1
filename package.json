@@ -111,6 +111,6 @@
   },
   "devDependencies": {
     "gh-pages": "^1.1.0",
-    "webpack-dashboard": "^1.1.1"
+    "webpack-dashboard": "^2.0.0"
   }
 }

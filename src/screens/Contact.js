@@ -8,8 +8,6 @@ import EmailIcon from '@material-ui/icons/Email';
 import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
 import GoMarkGithub from 'react-icons/lib/go/mark-github';
 
-const styles = theme => ({});
-
 
 const styles = theme => ({
     root: theme.mixins.gutters({
