@@ -1,9 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Switch } from 'react-router-dom';
-import { withStyles } from 'material-ui/styles';
-import Typography from 'material-ui/Typography';
-
+import { withStyles } from '@material-ui/core/styles';
 import PDFViewer from './../components/PDFViewer';
 
 const styles = theme => ({});
