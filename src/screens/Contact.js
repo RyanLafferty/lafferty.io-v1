@@ -1,14 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { Switch } from 'react-router-dom';
-import { withStyles } from 'material-ui/styles';
-import Typography from 'material-ui/Typography';
-import Avatar from 'material-ui/Avatar';
-import Chip from 'material-ui/Chip';
-import Paper from 'material-ui/Paper';
-import EmailIcon from 'material-ui-icons/Email';
+import { withStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
+import Avatar from '@material-ui/core/Avatar';
+import Chip from '@material-ui/core/Chip';
+import Paper from '@material-ui/core/Paper';
+import EmailIcon from '@material-ui/icons/Email';
 import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
 import GoMarkGithub from 'react-icons/lib/go/mark-github';
+
+const styles = theme => ({});
 
 
 const styles = theme => ({

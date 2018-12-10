@@ -1,14 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
-import HomeIcon from 'material-ui-icons/Home';
-import DraftsIcon from 'material-ui-icons/Drafts';
-import WorkIcon from 'material-ui-icons/Work';
-import CodeIcon from 'material-ui-icons/Code';
-import ChatIcon from 'material-ui-icons/Chat';
-import AccountCircleIcon from 'material-ui-icons/AccountCircle';
-import InsertDriveFileIcon from 'material-ui-icons/InsertDriveFile';
-import EmailIcon from 'material-ui-icons/Email';
+import ListItem from '@material-ui/core/ListItem'
+import ListItemIcon from '@material-ui/core/ListItemIcon'
+import ListItemText from '@material-ui/core/ListItemText'
+
+import HomeIcon from '@material-ui/icons/Home';
+import WorkIcon from '@material-ui/icons/Work';
+import CodeIcon from '@material-ui/icons/Code';
+import ChatIcon from '@material-ui/icons/Chat';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
+import EmailIcon from '@material-ui/icons/Email';
 
 
 export const listItems = (

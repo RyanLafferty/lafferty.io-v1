@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
-import { createMuiTheme, MuiThemeProvider } from 'material-ui/styles';
-import lightBlue from 'material-ui/colors/lightBlue';
-import orange from 'material-ui/colors/orange';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
+import lightBlue from '@material-ui/core/colors/lightBlue';
+import orange from '@material-ui/core/colors/orange';
 import Home from './screens/Home';
 import registerServiceWorker from './registerServiceWorker';
 
